@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tugas Uas</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    var arrLang = {
+      'en': {
+        'home': 'Home',
+        'about': 'About Us',
+        'contact': 'Contact Us',
+        'desc': 'Berikut adalah deskripsi tugas Dodi Setianto 2016140'
+      },
+      'km': {
+        'home': 'ទំព័រដើម',
+        'about': 'អំពីយើង',
+        'contact': 'ទំនាក់ទំនងយើងខ្ញុំ',
+        'desc': 'នេះគឺជាអត្ថបទរបស់ខ្ញុំ'
+      }
+    };
+
+    // Process translation
+    $(function() {
+      $('.translate').click(function() {
+        var lang = $(this).attr('id');
+
+        $('.lang').each(function(index, item) {
+          $(this).text(arrLang[lang][$(this).attr('key')]);
+        });
+      });
+    });
+  </script>
+</head>
+<body>
+  <button id="en" class="translate">English</button>
+  <button id="km" class="translate">ខ្មែរ</button>
+
+  <ul>
+    <li class="lang" key="home">Home</li>
+    <li class="lang" key="about">About Us</li>
+    <li class="lang" key="contact">Contact Us</li>
+  </ul>
+  <p class="lang" key="desc">Berikut adalah deskripsi tugas Dodi Setianto 2016140</p>
+
+  <br>
+  <p>
+     Dilampirkan Sebagai Tugas UAS Mata Kuliah Sistem Penunjang Keputusan (SPK)
+    </a>
+    <br>
+    <br>
+    # Terimakasih kepada Bapak AGUNG PERDANANTO S.Kom, M.Kom  untuk satu Semester ini atas ilmu yang bapak berikan kepada kami secara online.
+    <br>
+        Mohon maaf jika ada kesalahan baik yang di sengaja maupun tidak disengaja pada saat E-lerning dan tugas lainya dalam satu semester ini, sukses selalu untuk kita semua. 
+        <br>
+        aamiin #
+    </a>
+  </p>
+</body>
+</html>
